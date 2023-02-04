@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/Logo.png" alt="logo">
+    </header>
+    <main class="container">
+        <section>
+            <h1>Encriptador de palabras</h1>
+            <textarea class="text-area" name="" id="" cols="30" rows="10" placeholder="Ingresa el texto."></textarea>
+            <div>
+                <h6 class="informacion"><img src="img/bi_exclamation-circle-fill.png"> Solo letras minúsculas y no se permiten caracteres especiales.</h6>
+            </div>
+            <div class="botones">
+                <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje" cols="30" rows="10"></textarea>
+            <textarea class="instrucciones" cols="20" rows="10" placeholder="Escribe la palabra que quieras encriptar en el cuadro derecho. Puedes copiar la palabra encriptada con el boton 'Copiar' y pegar con la opcion del mouse o usando el atajo 'CTRL + V'. Puedes refrescar la pagina para seguir encriptando otras palabras."></textarea>
+            <div>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+                <button class="refresh" onclick="location.href = location.href"><img class="reload" src="img/refresh.png" alt="refrescar pagina"></button>
+                <button class="boton-instrucciones" onclick="mostrarAyuda()">Ayuda</button>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h5>Por Daniel Czarnecki. - Alura Latam G4.</h5>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
